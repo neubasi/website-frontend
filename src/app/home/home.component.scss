@@ -9,6 +9,17 @@
 	padding:400px 0;
 	height: 100vh;
 }
+
+
+
+@media (max-device-width: 800px) {
+	.header{
+		padding:100px 0;
+	}
+	.header h1{font-size: 3rem!important;}
+}
+
+
 .logo{
 	width:130px;
 	margin:0 auto 35px;
@@ -74,6 +85,7 @@ color: #fff;
 	text-decoration:none;
 	color:#3eda75 !important;
 	background:#fff;
+	border:1px solid #3eda75!important;
 }
 
 .link:active, .link:focus {
@@ -274,6 +286,7 @@ color: #fff;
 
 .Portfolio-box img:hover {
 	opacity: 0.6;
+	cursor: pointer;
 }
 
 .Portfolio-nav li a.current{

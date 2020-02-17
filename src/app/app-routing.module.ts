@@ -3,11 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PerformanceDashboardComponent } from './performance-dashboard/performance-dashboard/performance-dashboard.component';
 import { TestComponent } from './test/test.component';
+import { WebsiteComponent } from './website/website.component';
 
 
 
 const routes: Routes =  [
   { path: '', component: HomeComponent },
+  {
+    path: 'website',
+    component: WebsiteComponent
+  },
   {
     path: 'performance-dashboard',
     component: PerformanceDashboardComponent

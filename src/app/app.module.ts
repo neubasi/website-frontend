@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PerformanceDashboardComponent } from './performance-dashboard/performance-dashboard/performance-dashboard.component';
 import { TestComponent } from './test/test.component';
+import { WebsiteComponent } from './website/website.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { TestComponent } from './test/test.component';
     HomeComponent,
     PerformanceDashboardComponent,
     TestComponent,
+    WebsiteComponent,
     
   ],
   imports: [

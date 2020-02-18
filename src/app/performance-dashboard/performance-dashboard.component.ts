@@ -29,7 +29,7 @@ export class PerformanceDashboardComponent implements OnInit {
 }
 
  removeData(chart) {
-   if(chart.data.labels.length >= 100){
+   if(chart.data.labels.length >= 600){
   chart.data.labels.shift();
   chart.data.datasets[0].data.shift();
   chart.update();

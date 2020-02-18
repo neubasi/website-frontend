@@ -1,0 +1,60 @@
+<div class="container" style="margin-top: 2rem;">
+  <div class="row">
+    <div class="col">
+      <div>
+        <h3 style="font-size: 20px;font-weight: 600;">PERFORMANCE DASHBOARD <div class="arrow float-right"> <span routerLink="/">← back</span>
+          </div>
+        </h3>
+        <h3>OS: {{data?.os}}</h3>
+        <h3>ARCHITEKTUR: {{data?.arch}}</h3>
+        <h3>PLATTFORM: {{data?.platform}}</h3>
+        <h3>RELEASE: {{data?.release}}</h3>
+        <h3>CPU AUSLASTUNG: {{data?.cpu}}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <canvas id="myChart"></canvas>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col">
+      <p>Projektbeschreibung:</p>
+      Das Performance Dashboard visualisiert die CPU Auslastung (in %) des Host-Server in Echtzeit der letzten 60 Sekunden.
+      Die Daten werden pro Sekunde 10x aktualisiert.  
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Dimension</th>
+            <th scope="col">Wert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Backend</td>
+            <td>NodeJS</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Datenprotokoll</td>
+            <td>Websocket</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Chart-Lib</td>
+            <td>Chart.JS</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Aktualisierungsintervall</td>
+            <td>10/sec</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

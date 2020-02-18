@@ -55,6 +55,10 @@ build() {
       }]
   },
   options: {
+    elements: {
+      point:{
+          radius: 0
+      }},
     tooltips: {
          enabled: false
     },

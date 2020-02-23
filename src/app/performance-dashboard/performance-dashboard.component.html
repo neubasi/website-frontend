@@ -2,7 +2,9 @@
   <div class="row">
     <div class="col">
       <div>
-        <h3 style="font-size: 20px;font-weight: 600;">PERFORMANCE DASHBOARD <div class="arrow float-right"> <span routerLink="/">← back</span>
+        <h3 style="font-size: 20px;font-weight: 600;">PERFORMANCE DASHBOARD <div class="arrow float-right"> 
+          <span style="margin-right:25px"><a target="_blank" class="github" href="https://github.com/neubasi/performance-dashboard"><i title="Quellcode" class="fa fa-github"></i></a> </span>
+          <span routerLink="/">← back</span>
           </div>
         </h3>
         <h3>OS: {{data?.os}}</h3>
@@ -19,12 +21,13 @@
     </div>
   </div>
   <br>
+  <hr>
   <div class="row">
     <div class="col">
       <p>Projektbeschreibung:</p>
       Das Performance Dashboard visualisiert die CPU Auslastung (in %) des Host-Server in Echtzeit der letzten 60 Sekunden.
-      Die Daten werden pro Sekunde 10x aktualisiert.  
-      <table class="table">
+      Die Daten werden pro Sekunde 10x aktualisiert.
+       <table class="table" style="margin-top:12px">
         <thead>
           <tr>
             <th scope="col">#</th>

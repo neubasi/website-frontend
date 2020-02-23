@@ -1,0 +1,36 @@
+<div class="container" style="margin-top: 2rem;">
+    <div class="row">
+      <div class="col">
+        <div>
+          <h3 style="font-size: 20px;font-weight: 600;">STATUS COCKPIT <div class="arrow float-right"> 
+            <span style="margin-right:25px"><a target="_blank" class="github" href="https://github.com/neubasi/website-frontend"><i title="Quellcode" class="fa fa-github"></i></a> </span>
+            <span routerLink="/">← back</span>
+            </div>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table class="table" style="margin-top:12px">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">APPLIKATION</th>
+                <th scope="col">LETZTE AKTUALISIERUNG</th>
+                <th scope="col">STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let e of data; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{e.Applikation}}</td>
+                <td>{{e.Timestamp}}</td>
+                <td>NodeJS</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+    <br>
+    <hr>

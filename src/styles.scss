@@ -51,12 +51,9 @@ p{
 }
 
 
-body {
-	font-family: 'Open Sans', sans-serif;
-}
-
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
   }
 
 /* ==========================================================================

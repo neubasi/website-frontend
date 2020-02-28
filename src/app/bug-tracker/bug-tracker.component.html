@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 style="font-size: 20px;font-weight: 600;">BUGTRACKER <div class="arrow float-right">
+          <span style="margin-right:25px"><a target="_blank" class="github"><i title="Quellcode"
+                class="fa fa-github"></i></a> </span>
+          <span routerLink="/">← back</span>
+        </div>
+      </h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <button mat-stroked-button color="primary" >Speichern</button>
+    </div>
+    <div class="col" style="text-align: right;">
+      <button mat-raised-button color="primary" (click)="addBoard()">+ Board hinzufügen</button>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-4" *ngFor="let e of board; let i = index">{{i}}   <button style="text-align: right; float:right; line-height: 25px;
+      min-width: 0px!important;" mat-flat-button color="warn" (click)="removeBoard(e)">X</button> <br>
+      <mat-card>
+        <mat-form-field style="width: 100%;" class="example-full-width">
+          <mat-label>Issue</mat-label>
+          <input [(ngModel)]="value" matInput ><button *ngIf="value" style="text-align: right; float:right; line-height: 25px;min-width: 0px" mat-flat-button color="primary" (click)="addIssue(i, value)">✔</button>
+        </mat-form-field>
+        <li *ngFor="let issue of e.issue">{{issue}}<button style="text-align: right; float:right; line-height: 25px;
+          min-width: 0px!important;" mat-flat-button color="warn" >X</button> </li>
+      </mat-card>
+    </div>
+  </div>
+</div>

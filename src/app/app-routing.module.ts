@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PerformanceDashboardComponent } from './performance-dashboard/performance-dashboard.component';
 import { WebsiteComponent } from './website/website.component';
-import { StatusCockpitComponent } from './status-cockpit/status-cockpit.component';
+import { BugTrackerComponent } from './bug-tracker/bug-tracker.component';
+
 
 
 
@@ -18,8 +19,8 @@ const routes: Routes =  [
     component: PerformanceDashboardComponent
   },
   {
-    path: 'status-cockpit',
-    component: StatusCockpitComponent
+    path: 'bug-tracker',
+    component: BugTrackerComponent
   },
 
 ];
